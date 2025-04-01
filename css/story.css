@@ -46,3 +46,9 @@ h2 {
     font-family: "Courier New", monospace;
     letter-spacing: 2px;
 }
+
+main{
+    max-height: 100%;
+    width: auto;
+    padding: 2rem 10rem;
+}
