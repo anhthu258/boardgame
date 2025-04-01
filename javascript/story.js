@@ -18,3 +18,15 @@ function typeText() {
 }
 
 window.onload = typeText;
+
+let theSong = document.getElementById("song");
+let logo = document.getElementById("logo");
+logo.onclick = function () {
+    if(theSong.paused) {
+        theSong.play();
+        logo.src = "/img/pause.png";
+    } else {
+        theSong.pause();
+        logo.src = "/img/play.png";
+    }
+}

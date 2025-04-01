@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boardgame</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/story.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/story.css"/>
     <!-- Link til Google Fonts for Ikoner -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://use.typekit.net/wgg0axu.css">
@@ -45,6 +45,12 @@
               <span class="nav-label">Clues</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="notes.html" class="nav-link">
+              <span class="material-symbols-rounded">note</span>
+              <span class="nav-label">Notes</span>
+            </a>
+          </li>
         </ul>
 
         <!-- Secondær Nav i bunden -->
@@ -60,15 +66,35 @@
     </aside>
 
     <main>
-      <h1>The Murder at the Wright's Mansion</h1>
-      <p>Made by - The Hockey Team</p>   
-      
-      <section id="story-container">
-        <div id="text-box">
-            <p id="typing-text"></p>
-        </div>
-        <p id="horror-text">You have ONE guess</p>
-    </section>
+
+        <section class="whole-container">
+
+            <section class="music-container">
+                <section class="music-content">
+                    <img src="/img/play.png" alt="play button" id="logo">
+                </section>
+    
+            </section>
+            <audio id="song" src="/music/ambience-wicked.mp3" type="audio/mp3"></audio>
+
+            
+            <section class="titleCard">
+                <h1>The Murder at the Wright's Mansion</h1>
+                <p>Made by - The Hockey Team</p>
+            </section>   
+          
+          <section id="story-container">
+            <div id="text-box">
+                <p id="typing-text"></p>
+            </div>
+            <p id="horror-text">You have ONE guess</p>
+        </section>
+    
+        <div id="effect">
+            <img src="../img/blood-splatter.png" alt="png of blood splatter">
+          </div>
+        </section>
+       
     </main>
 
     <!-- Script -->
