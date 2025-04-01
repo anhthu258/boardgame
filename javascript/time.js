@@ -11,7 +11,7 @@ function updateTimerDisplay() {
     const minutes = Math.floor(totalTime / 60);
     const seconds = totalTime % 60;
 
-    Minutes.textContent = String(minutes).padStart(2, '0');
+    Minutes.textContent = String(minutes).padStart(2, '0'); //Padstart gør så der altid er 2 cifre og at foreste cifer er 0 hvis det er 1 cifer
     Seconds.textContent = String(seconds).padStart(2, '0');
 }
 
@@ -23,19 +23,19 @@ function startTimer() {
         } else {
             clearInterval(timerInterval);
         }
-    }, 1000);
+    }, 1000); //1000 = den tæller ned med en hastighed af 1 "sekund" (tal skift) i sekunded
 }
 
 function resetTimer() {
     clearInterval(timerInterval);
-    totalTime = 10 * 60; // Reset to 10 minutes
+    totalTime = 10 * 60; 
     updateTimerDisplay();
     startTimer();
 }
 
-// Initialize the timer display and start the timer
+//Start timer
 updateTimerDisplay();
 startTimer();
 
-// Add event listener to reset button
+// Reset button genstarter tid ved klik
 ResetButton.addEventListener('click', resetTimer);
