@@ -18,6 +18,10 @@ body {
     background-attachment: fixed; 
 }
 
+.music-container {
+    display: flex;
+    justify-content: flex-start;
+}
 
 #story-container {
     max-width: 600px;
