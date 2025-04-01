@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#story-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#text-box {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    line-height: 1.6;
+    font-size: 16px;
+    white-space: pre-line;
+    min-height: 150px;
+}
+
+#horror-text {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ce001b;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+    font-family: "Courier New", monospace;
+    letter-spacing: 2px;
+}
