@@ -45,28 +45,43 @@
               <span class="nav-label">Clues</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="notes.html" class="nav-link">
-              <span class="material-symbols-rounded">note</span>
-              <span class="nav-label">Notes</span>
-            </a>
-          </li>
-        </ul>
-
-        <!-- Secondær Nav i bunden -->
-        <ul class="nav-list secondary-nav">
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <span class="material-symbols-rounded">help</span>
-              <span class="nav-label">Hints</span>
-            </a>
-          </li>
         </ul>
       </nav>
     </aside>
 
-    <main>
+    <div id="hints">
+      <button id="popupButton">              
+        <span class="material-symbols-rounded">help</span>
+        <span class="nav-label">Hints</span>
+      </button>
+  
+      <aside class="popup" id="popup1">
+          <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+          <p>Laurence Watson thinks there's something wrong about the maid</p>
+      </aside>
+  
+      <aside class="popup" id="popup2">
+          <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+          <p>The Hunter says that Mr. Seamus O’Connor might be a tough nut to crack, but he is worth your time</p>
+      </aside>
+  
+      <aside class="popup" id="popup3">
+          <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+          <p>Talk to the people of the house</p>
+      </aside>
 
+      <aside class="popup" id="popup4">
+        <span class="close-btn" onclick="closePopup('popup4')">&times;</span>
+        <p>The maid is telling the truth</p>
+      </aside>
+
+      <aside class="popup" id="popup5">
+        <span class="close-btn" onclick="closePopup('popup5')">&times;</span>
+        <p>The Butler is telling the truth</p>
+      </aside>
+    </div>
+
+    <main>
         <section class="whole-container">
 
             
@@ -95,11 +110,11 @@
             <img src="../img/blood-splatter.png" alt="png of blood splatter">
           </div>
         </section>
-       
     </main>
 
     <!-- Script -->
     <script src="../javascript/nav.js"></script>
     <script src="../javascript/story.js"></script>
+    <script src="../javascript/popup.js"></script>
   </body>
 </html>
