@@ -103,3 +103,8 @@ body {
     color:#6d2932;
     z-index: 2;
   }
+
+  .play-img {
+    width: 70px; 
+    height: auto; 
+  }
