@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  background-image: ;
 }
 header{
     padding: 25vh 25vw 5rem 25vw;
@@ -29,3 +30,12 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
 }   
+
+#resetButton{
+    border: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    
+}
