@@ -12,6 +12,9 @@
 body {
   min-height: 100vh;
   background: linear-gradient(#f5f0e9, #e0c58f);
+  background-image: url(../img/paper-texture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sidebar {
@@ -212,10 +215,37 @@ body {
   display: none;
 }
 
-main{
+.titleCard{
   max-height: 100%;
   width: auto;
   padding: 2rem 10rem;
+}
+
+.titleCard p{
+  font-size: 1.5rem;
+  color: #6d2932;
+}
+
+.titleCard button{
+  height: 5rem;
+  width: 10rem;
+  font-size: 3rem;
+  font-family: "Waters-Titling-Semicondensed-Pro";
+  font-weight: 100;
+  margin: 2.5rem 0;
+  background-color: #112250;
+  border: none;
+  border-radius: 5%;
+}
+
+.titleCard button a{
+  text-decoration: none;
+  color: #f5f0e9;
+}
+
+.titleCard button:hover{
+  background-color: #6d2932;
+  cursor: pointer;
 }
 
 h1{
