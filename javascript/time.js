@@ -26,6 +26,16 @@ function startTimer() {
     }, 1000);
 }
 
+function resetTimer() {
+    clearInterval(timerInterval);
+    totalTime = 10 * 60; // Reset to 10 minutes
+    updateTimerDisplay();
+    startTimer();
+}
+
 // Initialize the timer display and start the timer
 updateTimerDisplay();
 startTimer();
+
+// Add event listener to reset button
+ResetButton.addEventListener('click', resetTimer);
