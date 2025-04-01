@@ -16,6 +16,32 @@ h1 {
     gap: 30px; /* Space between items */
     max-width: 1290px; /* Increased container width */
     margin: 20px auto;
+    perspective: 1000px;
+}
+
+
+.clue:hover{
+    transform: rotateY(180deg);
+}
+
+
+.clue-frontside, .clue-backside{
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.clue-frontside{
+    aspect-ratio: 1 / 1; /* Keeps squares */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clue-backside{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform: rotateY(180deg);
 }
 
 /* Individual clue boxes */
@@ -28,6 +54,8 @@ h1 {
     background-color: white;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
     padding: 15px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 /* Image styling */
