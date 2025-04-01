@@ -15,3 +15,17 @@ function updateTimerDisplay() {
     Seconds.textContent = String(seconds).padStart(2, '0');
 }
 
+function startTimer() {
+    timerInterval = setInterval(() => {
+        if (totalTime > 0) {
+            totalTime--;
+            updateTimerDisplay();
+        } else {
+            clearInterval(timerInterval);
+        }
+    }, 1000);
+}
+
+// Initialize the timer display and start the timer
+updateTimerDisplay();
+startTimer();
