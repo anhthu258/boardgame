@@ -45,8 +45,8 @@ h2 {
     position: absolute;
     top: 0;
     right: 1rem; 
+    cursor: pointer;
 }
-
 p{
     font-size: 1.5rem;
     font-weight: lighter;
