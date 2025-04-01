@@ -23,7 +23,7 @@ body{
     
 }
 h1{
-    padding: 20vh 25vw 5rem 30vw;
+    padding: 20vh 25vw 5rem 25vw;
     font-family:"Waters-Titling-CondensedPro" ;
     font-weight: 550;
     font-size: 4rem;
@@ -262,18 +262,22 @@ p{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: var(--button-theme);
   padding: 20px;
   border: 1px solid black;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  width: 250px;
+  width: 500px;
   border-radius: 10px;
   z-index: 2;
 }
 
+.popup p{
+  font-size: 1.25rem;
+  padding: 1rem 2rem 0.5rem 2rem;
+}
+
 #popupButton{
-  color: #f5f0e9;
   display: flex;
   gap: 12px;
   white-space: nowrap;
@@ -281,14 +285,14 @@ p{
   padding: 11px 15px;
   align-items: center;
   text-decoration: none;
-  border: 1px solid #112250;
-  background-color: #112250;
+  border: 1px solid var(--theme-color);
   transition: 0.4s ease;
+  background-color: var(--theme-color);
 }
 
 #popupButton:hover{
-  background-color: #f5f0e9;
-  color: #112250;
+  background-color: var(--button-theme);
+  color: var(--theme-color);
   cursor: pointer;
 }
 
@@ -298,13 +302,13 @@ p{
   right: 20px;
   z-index: 1;
 }
-
 .close-btn{
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 15px;
   font-size: 20px;
   cursor: pointer;
-  color:#6d2932;
+  color:white;
   z-index: 2;
+  font-size: 1.5rem;
 }
