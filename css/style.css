@@ -260,6 +260,60 @@ h1{
   position: absolute;
   bottom: 3rem;
   left: 50%;
+  z-index: -5;
+}
+
+.popup{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 250px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+#popupButton{
+  color: #f5f0e9;
+  display: flex;
+  gap: 12px;
+  white-space: nowrap;
+  border-radius: 8px;
+  padding: 11px 15px;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #112250;
+  background-color: #112250;
+  transition: 0.4s ease;
+}
+
+#popupButton:hover{
+  background-color: #f5f0e9;
+  color: #112250;
+  cursor: pointer;
+}
+
+#hints {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color:#6d2932;
+  z-index: 2;
 }
 
 /* Responsive media query code for small screens */
