@@ -71,7 +71,7 @@ function gameOverScreen() { // Game over skræm, når tiden er gået ud
 
     // Spil igen knap styling
     const spilIgenKnap = document.createElement('button');
-    spilIgenKnap.textContent = 'Spil igen';
+    spilIgenKnap.textContent = 'Play again?';
     spilIgenKnap.style.marginTop = '3rem';
     spilIgenKnap.style.padding = '10px 20px';
     spilIgenKnap.style.fontSize = '1.5rem';
