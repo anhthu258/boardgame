@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://use.typekit.net/wgg0axu.css");
+
+* {
+    background-color: #112250;
+    font-family: "poppins", sans-serif;
+}
+
+#styling img{
+    transform: scale(0.8);
+}
+
+#styling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    color: #f5f0e9;
+}
+
+#styling p{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+    color: #f5f0e9;
+    margin-top: 20px;
+}
