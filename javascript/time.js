@@ -3,7 +3,7 @@ const Seconds = document.getElementById('seconds');
 const ResetButton = document.getElementById('resetButton');
 
 let timerInterval;
-let totalTime = 1 * 6; // 10 minuter
+let totalTime = 10 * 60; // 10 minuter
 
 //finder den gemte tid i local storage
 const savedEndTime = localStorage.getItem('endTime');
@@ -60,14 +60,35 @@ function gameOverScreen() { // Game over skræm, når tiden er gået ud
     gameOverScreen.style.backgroundColor = 'black';
     gameOverScreen.style.color = 'white';
     gameOverScreen.style.display = 'flex';
+    gameOverScreen.style.flexDirection = 'column'; //Så spil igen er under teksten
     gameOverScreen.style.justifyContent = 'center';
     gameOverScreen.style.alignItems = 'center';
     gameOverScreen.style.fontSize = '5rem';
     gameOverScreen.style.zIndex = '999';
     gameOverScreen.id = 'gameOverScreen'; 
+    gameOverScreen.style.fontFamily = "'Poppins', sans-serif";
     gameOverScreen.textContent = 'The killer got away...';
 
-    // Append the overlay to the body
+    // Spil igen knap styling
+    const spilIgenKnap = document.createElement('button');
+    spilIgenKnap.textContent = 'Spil igen';
+    spilIgenKnap.style.marginTop = '3rem';
+    spilIgenKnap.style.padding = '10px 20px';
+    spilIgenKnap.style.fontSize = '1.5rem';
+    spilIgenKnap.style.cursor = 'pointer';
+    spilIgenKnap.style.border = 'none';
+    spilIgenKnap.style.borderRadius = '5px';
+    spilIgenKnap.style.backgroundColor = '#f5f0e9';
+    spilIgenKnap.style.color = '#112250';
+
+    //event når man trykker på knappen
+    spilIgenKnap.addEventListener('click', () => {
+        // event tager dig til forsiden til nyt spil.
+        location.href = '../index.html';
+    });
+
+    gameOverScreen.appendChild(spilIgenKnap); //viser knappen på game over skærmen
+
     document.body.appendChild(gameOverScreen);
 }
 
@@ -80,7 +101,7 @@ ResetButton.addEventListener('click', resetTimer);
 
 function resetTimer() {
     clearInterval(timerInterval);
-    totalTime = 1 * 6;
+    totalTime = 10 * 60;
     updateTimerDisplay();
     startTimer();
 }
