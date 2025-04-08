@@ -3,7 +3,7 @@ const Seconds = document.getElementById('seconds');
 const ResetButton = document.getElementById('resetButton');
 
 let timerInterval;
-let totalTime = 10 * 60; // 10 minuter
+let totalTime = 1 * 6; // 10 minuter
 
 //finder den gemte tid i local storage
 const savedEndTime = localStorage.getItem('endTime');
@@ -49,6 +49,24 @@ function startTimer() {
     }, 1000); //1000 = den tæller ned med en hastighed af 1 "sekund" (tal skift) i sekunded
 }
 
+function gameOverScreen() { // Game over skræm, når tiden er gået ud
+    const gameOverScreen = document.createElement('div');
+    gameOverScreen.style.position = 'fixed';
+    gameOverScreen.style.top = '0';
+    gameOverScreen.style.left = '0';
+    gameOverScreen.style.width = '100%';
+    gameOverScreen.style.height = '100%';
+    gameOverScreen.style.backgroundColor = 'black';
+    gameOverScreen.style.color = 'white';
+    gameOverScreen.style.display = 'flex';
+    gameOverScreen.style.justifyContent = 'center';
+    gameOverScreen.style.alignItems = 'center';
+    gameOverScreen.style.fontSize = '5rem';
+    gameOverScreen.style.zIndex = '999';
+    gameOverScreen.id = 'gameOverScreen'; 
+    gameOverScreen.textContent = 'The killer got away...';
+}
+
 // Start timer
 updateTimerDisplay();
 startTimer();
@@ -58,7 +76,7 @@ ResetButton.addEventListener('click', resetTimer);
 
 function resetTimer() {
     clearInterval(timerInterval);
-    totalTime = 10 * 60;
+    totalTime = 1 * 6;
     updateTimerDisplay();
     startTimer();
 }
