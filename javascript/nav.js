@@ -9,6 +9,7 @@ const closeAllDropdowns = () => {
   });
 };
 
+document.querySelector(".sidebar").classList.add("collapsed"); //sikre at sidenav bar starter lukket
 // Tilføjer click event til sidebar toggle knap
 document.querySelectorAll(".sidebar-toggler, .sidebar-menu-button").forEach((button) => {
   button.addEventListener("click", () => {
