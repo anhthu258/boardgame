@@ -1,6 +1,6 @@
 "use strict";
 
-        const text = `​It’s the 27th of September 1825, the Wrights invited their closest friends to their mansion for a dinner party to celebrate the very first modern railway. Once every guest arrived, they met the house cat, which greeted them at the door. Beside the cat is the butler, who stands ready with the welcoming wine. But, there has been a murder. The detective concludes the time of murder to be around 18:50. The body was found around the porch beside the kitchen.`;
+        const text = 'On the evening of September 27th, 1825, the Wrights hosted a dinner party at their mansion to celebrate the first modern railway. Guests were greeted at the door by the house cat and the butler with wine. But before the night began, a body was discovered near the kitchen porch—no blood, no sound, just silence. The murder is believed to have occurred around 18:50';
 
         let i = 0;
         let isTyping = false;
