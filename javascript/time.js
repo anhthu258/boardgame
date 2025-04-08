@@ -85,6 +85,8 @@ function gameOverScreen() { // Game over skræm, når tiden er gået ud
     spilIgenKnap.addEventListener('click', () => {
         // event tager dig til forsiden til nyt spil.
         location.href = '../index.html';
+        resetTimer(); // genstarter timer
+
     });
 
     gameOverScreen.appendChild(spilIgenKnap); //viser knappen på game over skærmen
