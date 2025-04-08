@@ -45,6 +45,7 @@ function startTimer() {
             updateTimerDisplay();
             const alertSound = new Audio('/music/evil-laugh-89423.mp3'); // afspiller evil laugh lyden når tiden er gået ud
             alertSound.play();
+            gameOverScreen(); // game over skærmen
         }
     }, 1000); //1000 = den tæller ned med en hastighed af 1 "sekund" (tal skift) i sekunded
 }
@@ -65,6 +66,9 @@ function gameOverScreen() { // Game over skræm, når tiden er gået ud
     gameOverScreen.style.zIndex = '999';
     gameOverScreen.id = 'gameOverScreen'; 
     gameOverScreen.textContent = 'The killer got away...';
+
+    // Append the overlay to the body
+    document.body.appendChild(gameOverScreen);
 }
 
 // Start timer
