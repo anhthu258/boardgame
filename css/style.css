@@ -18,6 +18,22 @@ body {
   overflow: hidden;
 }
 
+#timer {
+  color: white;
+  background-color: #112250;
+  position: absolute;
+  bottom: 15%;
+  left: 9%;
+  height: 15rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  
+}
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -342,3 +358,4 @@ h1{
     transform: translateY(15px);
   }
 }
+

@@ -1,5 +1,3 @@
-"use strict";
-
 const Minutes = document.getElementById('minutes');
 const Seconds = document.getElementById('seconds');
 const ResetButton = document.getElementById('resetButton');
@@ -45,9 +43,12 @@ function startTimer() {
             localStorage.removeItem('endTime'); //når uret løber ud fjerner du endtime fra det gemte
             totalTime = 0;
             updateTimerDisplay();
+            const alertSound = new Audio('/music/evil-laugh-89423.mp3'); // afspiller evil laugh lyden når tiden er gået ud
+            alertSound.play();
         }
     }, 1000); //1000 = den tæller ned med en hastighed af 1 "sekund" (tal skift) i sekunded
 }
+
 // Start timer
 updateTimerDisplay();
 startTimer();

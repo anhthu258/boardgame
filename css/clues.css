@@ -90,6 +90,21 @@ h1 {
     z-index: 2;
   }
 
+  #timerv2 {
+    color: white;
+    background-color: #112250;
+    position: absolute;
+    bottom: 13%;
+    left: 37.5%;
+    height: 15rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    
+  }
 /* Responsive design */
 @media (max-width: 600px) {
     .grid-container {
